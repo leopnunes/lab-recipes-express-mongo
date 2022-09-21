@@ -8,10 +8,15 @@ const Schema = mongoose.Schema;
 - dislikes: [ObjectsId]
 */
 
-const clientSchema = new Schema({
-  // TODO: write the schema
-});
+const UserSchema = new Schema(
+{
+  name: { type: String },
+  email: { type: String },
+  favorites: { type: Array },
+  dislikes: { type: Array }
+}
+);
 
-const ClientModel = mongoose.model("Client", clientSchema);
+const UserModel = mongoose.model("User", UserSchema);
 
-module.exports = ClientModel;
+module.exports = UserModel;
