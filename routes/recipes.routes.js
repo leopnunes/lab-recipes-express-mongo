@@ -1,7 +1,10 @@
-//Escreva suas rotas para as receitas aqui
+//Escreva suas rotas para as receitas aqui//
 
-// Import of the model Recipe from './models/Recipe.model.js'
-const Recipe = require("./models/Recipe.model");
+//Importe o express e instancie o Router aqui
+
+// Importe os models aqui
+const RecipeModel = require("../models/Recipe.model");
+const UserModel = require("../models/User.model");
 
 //1º rota: Criar uma receita
 
