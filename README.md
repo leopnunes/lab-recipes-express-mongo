@@ -79,8 +79,5 @@ Now you should have six different recipes in the database, but there was a mista
 
 Oh oh! The `Carrot Cake` is no longer available, so we need to remove it from the database. Using the [`Model.deleteOne`](https://mongoosejs.com/docs/api.html#model_Model.deleteOne) static, remove that recipe from the database and display a success message after doing it!
 
-### Iteration 6 - Close the Database
-
-After completing every task, you need to close the database. Otherwise, the connection will stay open until the node.js process dies. Pay attention to the asynchronicity of the operation. You should only close the connection after everything is done! :wink:
 
 Happy coding! 💙
